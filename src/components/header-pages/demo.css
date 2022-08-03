@@ -139,3 +139,21 @@ h2{
 #guide-btn{
     display: block;
 }
+
+#fileToUpload{
+    visibility: hidden;
+}
+
+.result{
+    position: fixed;
+    width: 38%;
+    height: 55%;
+    bottom: 15%;
+    right: 16%;
+}
+
+#start-button-demo{
+    position: fixed;
+    top: 55%;
+    left: 55%;
+}
