@@ -1,0 +1,34 @@
+.container-error{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.container-error img{
+    position: relative;
+    top: 120px;
+    width: 80%;
+    height: 100%;
+}
+
+.error-illustration{
+    width: 80%;
+    position: relative;
+    height: 100%;
+}
+
+.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+    width: 25%;
+    height: 15%;
+}
+
+.Link:hover{
+    color: var(--btn);
+}
