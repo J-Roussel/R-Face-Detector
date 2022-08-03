@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+:root{
+    --barnav-hover:#A6874E;
+    --barnav:#FFC745;
+    --rouge:#D92525;
+    --arriere-plan:#4183D9;
+    --text:#666DF2;
+    --background-header:#2C2A59;
+    --background-body: #267365;
+    --logo:#F2BE22;
+    --btn:#DAA0F2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 8%;
+    background-color: var(--background-header);
+    display: flex;
+    align-items: center;
+    z-index: 11;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title{
+    color: var(--logo);
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#logo{
+    width: 5%;
+    height: 65%;
+    margin-right: 1%;
+}
+
+.barnav{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.barnav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color: var(--barnav);
+}
+
+.barnav ul li{
+    list-style: none;   
+}
+
+.barnav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--barnav);
+}
+
+.barnav ul li a:hover{
+    color:var(--barnav-hover);
+    cursor: pointer;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.home-description{
+    position: relative;
+}
+
+.home-description img{
+    width: 200px;
+    height: 200px;
+}
+
+.home-image-illustration{
+    width: 200px;
+    height: 200px;
+    right: 45%;
+    bottom: 70%;
+    position: fixed;
+}
+
+.home-image-illustration img{
+    width: 780px;
+    height: 775px;
+}
+
+.text-description{
+    position: relative;
+    z-index: 13;
+    width: 41%;
+    padding-bottom: 20px;
+}
+
+.text-description h2{
+    color: var(--background-header);
+}
+
+.title-home{
+    padding: 0%;
+    margin: 0%;
+}
+
+.text-description .descri{
+    text-align: justify;
+    margin-top: 1.5%;
+}
+
+#start{
+    text-decoration: none;
+    background-color: var(--btn);
+    border: 1px solid var(--btn);
+    padding: 10px 60px;
+    color: var(--btn);
+    font-weight: bolder;
+    position: relative;
+    left: 15%;
+    animation: start-animation 1s steps(2, start) infinite;
+}
+
+/*Start button animation*/
+@keyframes start-animation{
+    to {
+        color: var(--background-header);
+        transition: 1s ease-in-out;
+    }
   }
+
+#start:hover{
+    cursor: pointer;
+    background-color: var(--background-header);
+    color: var(--btn);
+    animation: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container-start{
+    width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+
+.menu-reseau{
+    position: fixed;
+    width: 450px;    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reseaux-sociaux{
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
 }
+
+#logo-facebook, #logo-email, #logo-linkedin{
+    width: 26px;
+    height: 26px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    margin-left: 10px;
+}
+
+#logo-facebook:hover, #logo-email:hover, #logo-linkedin:hover{
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.link{
+    display: flex;
+    text-decoration: none;
+}
+
+#link-facebook, #link-email, #link-linkedin{
+    visibility: hidden;
+}
+
+
+#logo-facebook:hover ~ #link-facebook{
+    visibility: visible;
+    color: var(--arriere-plan);
+}
+
+#logo-linkedin:hover ~ #link-linkedin{
+    visibility: visible;
+    color: rgb(22, 48, 107);
+}
+
+#logo-email:hover ~ #link-email{
+    visibility: visible;
+    color: var(--logo);
+}
+

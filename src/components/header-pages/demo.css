@@ -1,0 +1,141 @@
+:root{
+    --barnav-hover:#A6874E;
+    --barnav:#FFC745;
+    --rouge:#D92525;
+    --arriere-plan:#4183D9;
+    --text:#666DF2;
+    --background-header:#2C2A59;
+    --background-body: #267365;
+    --logo:#F2BE22;
+    --btn:#DAA0F2;
+}
+
+p{
+    font-size: 13pt;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.container-demo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-demo{
+    border: 1px solid var(--barnav);
+    width: 80%;
+    height: 500px;
+    margin: 100px;
+}
+
+.head-demo{
+    position: fixed;
+    top: 10%;
+    text-align: center;
+    margin-top: 1%;
+    padding-left: 5%;
+    padding-right: 15%;
+}
+
+h2{
+    color: var(--background-header);
+    padding: 5px;
+    font-weight: normal;
+}
+
+
+.title-demo{
+    border-bottom: 1px solid var(--background-header);
+    width: 30%;
+    margin: auto;
+}
+
+
+
+.body-demo{
+    position: fixed;
+    top: 30%;
+    margin-left: 5%;
+    width: 69.5%;
+    height: 55%;
+    border: 1px solid var(--barnav);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foot-demo{
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    left: 10%;
+    right: 10%;
+}
+
+.imported-image{
+    background-image: url('../images/unknown.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 20%;
+    width: 25%;
+    height: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.start-button{
+    text-decoration: none;
+    background-color: var(--btn);
+    border: 1px solid var(--btn);
+    padding: 10px 60px;
+    color: var(--btn);
+    font-weight: bolder;
+    position: relative;
+    left: 15%;
+    animation: start-animation 1s steps(2, start) infinite;
+}
+
+/*Start button animation*/
+@keyframes start-animation{
+    to {
+        color: var(--background-header);
+        transition: 1s ease-in-out;
+    }
+  }
+
+.start-button:hover{
+    cursor: pointer;
+    background-color: var(--background-header);
+    color: var(--btn);
+    animation: none;
+}
+
+
+.logo-no-image{
+    position: relative;
+    height: 72%;
+    width: 100%;
+    margin-bottom: 10%;
+    border-radius: 2%;
+}
+
+.explication-demo{
+    position: absolute;
+    width: 100%;
+    height: 9%;
+    bottom: 5%;
+    text-align: center;
+}
+
+
+#guide-btn{
+    display: block;
+}

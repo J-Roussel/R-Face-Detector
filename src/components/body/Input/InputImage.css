@@ -1,0 +1,20 @@
+#fileToUpload{
+    position: fixed;
+    top: 25%;
+    bottom: 0%;
+    visibility: hidden;
+}
+
+.result{
+    position: fixed;
+    width: 38%;
+    height: 55%;
+    bottom: 15%;
+    right: 16%;
+}
+
+.input-btn-demo-input{
+    position: fixed;
+    top: 55%;
+    left: 50%;
+}
