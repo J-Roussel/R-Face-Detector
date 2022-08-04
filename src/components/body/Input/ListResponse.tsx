@@ -182,4 +182,4 @@ const ListResponse: React.FC<{result : RootObject}> = (props : { result : RootOb
   )
 }
 
-export default ListResponse
+export default ListResponse;
