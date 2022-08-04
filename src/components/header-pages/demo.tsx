@@ -16,7 +16,7 @@ const Demo:React.FunctionComponent = ():JSX.Element => {
 
     const rekognition = new AWS.Rekognition()
     const DetectFaces = (ImageData : ArrayBuffer) => {
-      AWS.config.region = process.env.region as string;
+      AWS.config.region = process.env.REACT_APP_REGION as string;
       const params= {
         Image: {
           Bytes: ImageData
@@ -71,7 +71,6 @@ const Demo:React.FunctionComponent = ():JSX.Element => {
                                     //@ts-ignore
                                     <ListResponse result={dataValues?.FaceDetails[0]}/>                                     
                                 }
-                                console.log(dataValues?.FaceDetails[0]);
                             </div>
                             </div>    
                         ) : 
