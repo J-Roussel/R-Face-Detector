@@ -2,8 +2,9 @@ import AWS from "aws-sdk";
 
 //
 export const AnaLog = () => {
-    AWS.config.region= process.env.region as string;
+    AWS.config.region= process.env.REACT_APP_REGION as string;
     AWS.config.credentials = new AWS.CognitoIdentityCredentials( {
-        IdentityPoolId: process.env.IdentityPoolId as string
+        IdentityPoolId: process.env.REACT_APP_IDENTITY_POOL_ID as string
     })
+
 }
